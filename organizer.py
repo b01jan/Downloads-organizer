@@ -62,7 +62,7 @@ def create_folders(directories, directory_path):
 
 def organize_folders(directories, directory_path):
     """
-    This function organizes the files in the specified folder into folders
+    This function organizes the files in the specified folder into folders.
     :param directories: directories: dictionary, this is a dictionary
     containing the names of the sorted folders and the extensions that
     correspond to those folders.
