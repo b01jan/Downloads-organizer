@@ -7,7 +7,7 @@
  I recommend using .exe version of the script, which can easily be made with pyinstaller.
  I personnally put the .exe file in my startup folder so that it automaticly organizes my files when I log in on my computer (C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp).
  
- Based on suggesttions, I made an exe version of the script which organizes the direcotry where the organize_local_directory.py is located  so that it can easily be used on any folder.
+ Based on suggesttions, I made an exe version of the script which organizes the direcotry where the organize_local_directory.exe is located  so that it can easily be used on any folder.
  
  This is my first project to be posted on github. So please adjust your expectations accordingly :) .
  
