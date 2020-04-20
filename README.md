@@ -8,8 +8,12 @@
  I personnally put the .exe file in my startup folder so that it automaticly organizes my files when I log in on my computer (C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp).
  
  This is my first project to be posted on github. So please adjust your expectations accordingly :) .
+ 
 ## Requirements
  The script only uses standard python modules so there is no need to install aditional modules.
  The script itself requires a Python interpreter to run. I normally run it in my IDE.
  
  The .exe version of the script does not require python to be installed on your computer.
+ 
+## Important
+ The depending of the size of your (Downloads-) folder it can take quite a while for all the files to move/organize. Don't terminate the script while it's running because that may corrupt some of your files.
