@@ -7,7 +7,7 @@
  I also included an .exe version of the script, which I made with pyinstaller.
  I personnally put the file in my startup folder so that it automaticly organizes my files when I log in on my computer.
  
- This is my first project to be posted on github. So adjust your expectations accordingly please :) .
+ This is my first project to be posted on github. So please adjust your expectations accordingly :) .
 ## Requirements
  The script only uses standard python modules so there is no need to install aditional modules.
  The script itself requires a Python interpreter to run. I normally run it in my IDE.
