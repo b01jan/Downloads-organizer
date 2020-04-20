@@ -16,4 +16,4 @@
  The .exe version of the script does not require python to be installed on your computer.
  
 ## Important
- Depending on the size of your (Downloads-) folder it can take quite a while for all the files to move/organize. Don't terminate the script while it's running because that may corrupt some of your files.
+ Depending on the size of your (Downloads-) folder it can take quite a while for all the files to move/organize during the first run. Don't terminate the script while it's running because that may corrupt some of your files.
