@@ -11,4 +11,5 @@
 ## Requirements
  The script only uses standard python modules so there is no need to install aditional modules.
  The script itself requires a Python interpreter to run. I normally run it in my IDE.
+ 
  The .exe version of the script does not require python to be installed on your computer.
