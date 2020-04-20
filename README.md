@@ -5,7 +5,7 @@
  The script is very easy to addapt to suit your needs, so feel free to tinquer with it.
  
  I also included an .exe version of the script, which I made with pyinstaller.
- I personnally put the file in my startup folder so that it automaticly organizes my files when I log in on my computer.
+ I personnally put the .exe file in my startup folder so that it automaticly organizes my files when I log in on my computer (C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp).
  
  This is my first project to be posted on github. So please adjust your expectations accordingly :) .
 ## Requirements
