@@ -1,5 +1,5 @@
 """
-Titel: Voorbeeld scriptopbouw
+Titel: Downloads organizer
 Author: Jan B.
 Date: april 2020
 Version: 1.0
@@ -41,6 +41,7 @@ SOFTWARE.
 # imports:
 import os
 import shutil
+import sys
 
 
 def create_folders(directories, directory_path):
@@ -55,14 +56,14 @@ def create_folders(directories, directory_path):
     """
     for key in directories:
         if key not in os.listdir(directory_path):
-            os.mkdir(directory_path + '/' + key)
+            os.mkdir(os.path.join(directory_path, key))
     if "OTHER" not in os.listdir(directory_path):
-        os.mkdir(directory_path + '/' + "OTHER")
+        os.mkdir(os.path.join(directory_path, "OTHER"))
 
 
 def organize_folders(directories, directory_path):
     """
-    This function organizes the files in the specified folder into folders.
+    This function organizes the files in the specified folder into folders
     :param directories: directories: dictionary, this is a dictionary
     containing the names of the sorted folders and the extensions that
     correspond to those folders.
@@ -70,8 +71,8 @@ def organize_folders(directories, directory_path):
     directory that is to be sorted.
     """
     for file in os.listdir(directory_path):
-        if os.path.isfile(directory_path + '/' + file):
-            src_path = directory_path + '/' + file
+        if os.path.isfile(os.path.join(directory_path, file)):
+            src_path = os.path.join(directory_path, file)
             for key in directories:
                 extension = directories[key]
                 if file.endswith(extension):
@@ -88,8 +89,8 @@ def organize_remaining_files(directory_path):
     directory that is to be sorted.
     """
     for file in os.listdir(directory_path):
-        if os.path.isfile(directory_path + '/' + file):
-            src_path = directory_path + '/' + file
+        if os.path.isfile(os.path.join(directory_path, file)):
+            src_path = os.path.join(directory_path, file)
             dest_path = os.path.join(directory_path, "OTHER", file)
             shutil.move(src_path, dest_path)
 
@@ -111,7 +112,7 @@ def organize_remaining_folders(directories, directory_path):
     organized_folders = tuple(organized_folders)
     for folder in list_dir:
         if folder not in organized_folders:
-            src_path = directory_path + '/' + folder
+            src_path = os.path.join(directory_path, folder)
             dest_path = os.path.join(directory_path, "FOLDERS", folder)
             shutil.move(src_path, dest_path)
 
