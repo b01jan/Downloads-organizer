@@ -18,7 +18,7 @@
 ## How to use
 Change the directory_path variable in the organizer.py script and then run the script anyway you see fit.
 
-Alternativly you can run the organize_local_directory.exe to organize the folder where the exe file is located.
+Alternatively you can run the organize_local_directory.exe to organize the folder where the exe file is located.
  
 ## Important
  Depending on the size of your (Downloads-) folder it can take quite a while for all the files to move/organize during the first run. Don't terminate the script while it's running because that may corrupt some of your files.
