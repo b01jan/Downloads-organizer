@@ -114,7 +114,12 @@ def organize_remaining_folders(directories, directory_path):
         if folder not in organized_folders:
             src_path = os.path.join(directory_path, folder)
             dest_path = os.path.join(directory_path, "FOLDERS", folder)
-            shutil.move(src_path, dest_path)
+            try:
+                shutil.move(src_path, dest_path)
+            except shutil.Error:
+                shutil.move(src_path, dest_path + " - copy")
+                print("That folder already exists in the destination folder."
+                      "\nThe folder is renamed to '{}'".format(folder + " - copy"))
 
 
 if __name__ == '__main__':
@@ -144,7 +149,11 @@ if __name__ == '__main__':
         "OTHER": "",
         "FOLDERS": ""
     }
-    create_folders(directories, directory_path)
-    organize_folders(directories, directory_path)
-    organize_remaining_files(directory_path)
-    organize_remaining_folders(directories, directory_path)
+    try:
+        create_folders(directories, directory_path)
+        organize_folders(directories, directory_path)
+        organize_remaining_files(directory_path)
+        organize_remaining_folders(directories, directory_path)
+    except shutil.Error:
+        print("There was an error trying to move an item to its destination folder")
+
